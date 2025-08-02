@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini World | Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    h1 {
+      padding-top: 20px;
+      color: #00ffff;
+      text-align: center;
+    }
+
+    iframe {
+      display: none;
+      border: none;
+      width: 1000px;
+      height: 635px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #00cc99;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧱 Mini World</h1>
+
+  <div class="center" id="buttons">
+    <button onclick="startGame()">🎮 Play Game</button>
+  </div>
+
+  <iframe id="gameFrame" src="https://www.gameflare.com/embed/bloxdhop-io/" allowfullscreen></iframe>
+
+  <script>
+    function startGame() {
+      document.getElementById("buttons").style.display = "none";
+      document.getElementById("gameFrame").style.display = "block";
+    }
+  </script>
+</body>
+</html>
